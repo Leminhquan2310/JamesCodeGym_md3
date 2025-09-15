@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Giản Lược</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+        }
+
+        /* Header cố định */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: #1877f2;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            font-size: 20px;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
+        /* Layout chính */
+        .container {
+            display: flex;
+            margin-top: 60px; /* để không bị che bởi header */
+        }
+
+        /* Sidebar trái */
+        .sidebar {
+            width: 220px;
+            background: #fff;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            height: calc(100vh - 60px);
+            position: fixed;
+            top: 60px;
+            left: 0;
+            overflow-y: auto;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+            cursor: pointer;
+        }
+        .sidebar ul li:hover {
+            background: #f0f2f5;
+        }
+
+        /* Nội dung chính */
+        .content {
+            margin-left: 240px; /* chừa khoảng cho sidebar */
+            padding: 20px;
+            flex: 1;
+        }
+
+        .post {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+<header>
+    Facebook
+</header>
+
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <ul>
+            <li>Trang cá nhân</li>
+            <li>Bạn bè</li>
+            <li>Nhóm</li>
+            <li>Trang</li>
+            <li>Sự kiện</li>
+        </ul>
+    </aside>
+
+    <!-- Nội dung chính -->
+    <main class="content">
+        <div class="post">Bài viết 1: Xin chào mọi người!</div>
+        <div class="post">Bài viết 2: Hôm nay trời đẹp quá!</div>
+        <div class="post">Bài viết 3: Cùng học CSS nhé.</div>
+    </main>
+</div>
+</body>
+</html>
