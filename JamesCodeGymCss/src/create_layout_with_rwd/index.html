@@ -91,6 +91,7 @@
             font-size: 35px;
             padding: 20px 0;
         }
+
         section article {
             padding-top: 30px;
         }
@@ -106,6 +107,7 @@
             margin: 10px;
             background: #eeeeee;
         }
+
         footer {
             width: 100%;
             height: 80px;
@@ -115,6 +117,15 @@
             align-items: center;
             font-size: 20px;
             color: #ffffff;
+        }
+
+        @media only screen and (max-width: 768px) {
+            section .content,
+            section aside,
+            section article {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
