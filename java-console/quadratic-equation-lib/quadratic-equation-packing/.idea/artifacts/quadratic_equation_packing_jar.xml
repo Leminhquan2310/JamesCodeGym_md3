@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="quadratic-equation-packing:jar">
+    <output-path>$PROJECT_DIR$/../../library-package</output-path>
+    <root id="archive" name="quadratic-equation-packing.jar">
+      <element id="module-output" name="quadratic-equation-packing" />
+    </root>
+  </artifact>
+</component>
