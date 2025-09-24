@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="demo-packing:jar">
+    <output-path>$USER_HOME$/OneDrive/Máy tính</output-path>
+    <root id="archive" name="demo-packing.jar">
+      <element id="module-output" name="demo-packing" />
+    </root>
+  </artifact>
+</component>
